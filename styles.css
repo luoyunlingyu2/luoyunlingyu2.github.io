@@ -31,11 +31,6 @@ header {
     padding-top: 1.5rem;
     justify-content: center;
 }
-.icon {
-    height: 40px;
-    width: 40px;
-    margin-right: 1rem;
-}
 .title {
     font-size: 26px;
 }
