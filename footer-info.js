@@ -15,6 +15,14 @@ document.addEventListener("DOMContentLoaded", function () {
     const visitorCount = Math.floor(1000 + Math.random() * 9000);
     document.getElementById("visitor-count").textContent = visitorCount;
 
-    // 获取访问 IP (这里用模拟 IP 地址示例)
-    document.getElementById("user-ip").textContent = "123.45.67.89"; // 实际项目中应通过服务器获取
+    // 获取访问 IP 地址
+    fetch('https://api.ipify.org?format=json')
+        .then(response => response.json())
+        .then(data => {
+            document.getElementById("user-ip").textContent = data.ip;
+        })
+        .catch(error => {
+            console.error('IP 地址获取失败:', error);
+            document.getElementById("user-ip").textContent = "获取失败";
+        });
 });
