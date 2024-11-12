@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     // 站点运行时间
-    const startDate = new Date("2024-01-01T00:00:00"); // 网站上线时间
+    const startDate = new Date("2024-11-11T00:00:00"); // 网站上线时间
     setInterval(function () {
         const now = new Date();
         const diff = now - startDate;
