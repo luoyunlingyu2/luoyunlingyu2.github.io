@@ -4,13 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>amnssb的网站</title>
-    <!-- 引入外部 CSS 文件 -->
     <link rel="stylesheet" href="styles.css">
-    <!-- 添加随机背景和动态数据脚本 -->
     <script src="background.js" defer></script>
     <script src="footer-info.js" defer></script>
 </head>
 <body>
+    <!-- 弹窗 -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <h2>欢迎访问</h2>
+            <p>感谢您访问 amnssb 的网站！请阅读我们的隐私条款,如继续访问，则代表你默认同意条款内容，如不同意，请离开本网页。</p>
+        </div>
+    </div>
+
     <!-- 页头 -->
     <header>
         <div class="glass-box title">
@@ -30,18 +37,15 @@
     <!-- 页脚 -->
     <footer>
         <div class="glass-box">
-            <!-- 网易云音乐播放器 -->
             <div class="music-player">
                 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=2608813264&auto=1&height=66"></iframe>
             </div>
-            <p>版权所有 &copy; 2024 amnssb的网站 | <a href="moban.html">隐私条款</a></p>
+            <p>版权所有 &copy; 2024 amnssb的网站 | <a href="yinsi.html">隐私条款</a></p>
             <p>网站运行时间：<span id="runtime"></span> | 访问人数：<span id="visitor-count"></span> | 您的 IP：<span id="user-ip"></span></p>
             <p>ICP备案号：<font style="font-size:16px"><img style="width:32px;height:32px;margin-bottom:-8px" src="https://moe.blog/content/uploadfile/Links/icp.gov.moe.png" /><a href="https://icp.gov.moe" target="_blank"><span style="color:#ff0000">萌</span><span style="color:#ca7900">I</span><span style="color:#48ab18">C</span><span style="color:#2720ac">P</span><span style="color:#9b17ae">备</span> </a><a href="https://icp.gov.moe/?keyword=20240260" target="_blank"> <span style="color:#ff0000">20</span><span style="color:#ca7900">24</span><span style="color:#48ab18">02</span><span style="color:#2720ac">60</span><span style="color:#f40428">号</span></a>| 浙ICP备XXXXXXX号 | 粤ICP备XXXXXXX号</p>
-            
-        
-        </body>
-        </html> 
         </div>
     </footer>
+
+    <script src="popup.js"></script>
 </body>
 </html>
